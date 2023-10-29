@@ -16,6 +16,23 @@ Unit and integration tests are provided for the repository and controller method
 
 ![RestaurantManagementSystem](https://github.com/amalg20/java-project1-github-repo-sda/assets/145042005/c8361a5f-a66c-40b3-90ba-6cc065f51cd4)
 
+## Setup:
+
+To setup the project I used:
+**i. Java 17**
+**ii. Maven**
+
+## Technologies Used:
+
+1. Spring Boot 3.1.5
+2. Maven
+3. Junit 5
+4. Postman
+5. DBeaver
+
+## Controllers and Routes structure:
+
+   
 ## Steps:
 
 1) Created Spring Boot project with Maven and Java 
