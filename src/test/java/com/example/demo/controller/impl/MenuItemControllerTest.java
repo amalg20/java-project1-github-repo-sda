@@ -62,6 +62,20 @@ class MenuItemControllerTest {
     }
 
     @Test
+    void saveMenuItem_validBody() throws Exception {
+        menuItem.setName("AAA");
+
+        menuItem = menuItemRepository.save(menuItem);
+
+        String body = objectMapper.writeValueAsString(menuItem);
+
+        mockMvc.perform(post("/api/menu-items/").content(body).contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andReturn();
+        assertFalse(menuItemRepository.findAll().toString().contains("hot coffee"));
+    }
+
+    @Test
     void updateMenuItem_validBody() throws Exception {
         menuItem.setName("AAA");
 

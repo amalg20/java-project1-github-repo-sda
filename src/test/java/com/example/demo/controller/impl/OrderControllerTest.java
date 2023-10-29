@@ -66,6 +66,19 @@ class OrderControllerTest {
 
     }
 
+    @Test
+    void saveOrder_validBody() throws Exception {
+        order.setStatus("cold");
+
+        order = orderRepository.save(order);
+
+        String body = objectMapper.writeValueAsString(order);
+
+        mockMvc.perform(post("/api/orders/").content(body).contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andReturn();
+        assertFalse(menuItemRepository.findAll().toString().contains("hot coffee"));
+    }
 
     @Test
     void updateOrder_validBody() throws Exception {

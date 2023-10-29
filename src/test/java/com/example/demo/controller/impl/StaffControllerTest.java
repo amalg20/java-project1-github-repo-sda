@@ -59,6 +59,20 @@ class StaffControllerTest {
     }
 
     @Test
+    void saveOrder_validBody() throws Exception {
+        staff.setName("huda");
+        staff = staffRepository.save(staff);
+
+        String body = objectMapper.writeValueAsString(staff);
+
+        mockMvc.perform(post("/api/staff/").content(body).contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andReturn();
+        assertFalse(menuItemRepository.findAll().toString().contains("huda"));
+    }
+
+
+    @Test
     void updateStaff_validBody() throws Exception {
         staff.setName("huda");
         staff = staffRepository.save(staff);
