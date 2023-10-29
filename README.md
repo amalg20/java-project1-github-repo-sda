@@ -75,6 +75,7 @@ C. /api/staff/ + staff.getId() : Delete Staff
 
 ## 7. Extra links : 
 
+https://slides.com/amalalgefes/palette-2620b4/edit
 
 ## 8. Future Work:
 1. I will increase the number of entity
