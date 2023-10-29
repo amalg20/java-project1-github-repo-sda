@@ -35,14 +35,17 @@ To setup the project I used:
 5. DBeaver
 
 ## Controllers and Routes structure:
+
 **1.MenuItemController:**
 A. /api/menu-items/ : Get All MenuItems
 B. /api/menu-items/+ menuItem.getId() : Update MenuItem
 C. /api/menu-items/ + menuItem.getId() : Delete MenuItem
+
 **2.OrderController:**
 A. /api/orders/ : Get All Orders
 B. /api/orders/ + order.getId() : Update Order
 C. /api/orders/ + order.getId() : Delete Order
+
 **3.StaffController:** 
 A. /api/staff/ : Get All Staffs
 B. /api/staff/ + staff.getId() : Update Staff
@@ -51,14 +54,13 @@ C. /api/staff/ + staff.getId() : Delete Staff
 ## Steps:
 
 1) Created Spring Boot project with Maven and Java 
-2) Defined Staff, MenuItem and Order model classes under entity package
+2) Defined Staff, MenuItem Room and Order model classes under entity package
 3) Added JPA annotations and relationships between entities
 4) Tested repositories by saving and fetching sample data
 5) Created REST controllers for CRUD operations on entities
 6) Moved controller logic to service classes
 7) Wrote MockMVC tests for controller methods
 8) Implemented exception handling with @ControllerAdvice
-
 9) Configured MySQL database with Spring Data JPA
 10) Used Git for version control and GitHub for remote repo
 
@@ -66,7 +68,8 @@ C. /api/staff/ + staff.getId() : Delete Staff
 
 
 ## Future Work:
-
+1. I will increase the number of entity
+2. I will use Authentication implemented with Spring Security.
 
 ## Resources:
 1. https://edynamiclearning.com/course/introduction-to-restaurant-management/
