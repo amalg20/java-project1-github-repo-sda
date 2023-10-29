@@ -1,5 +1,9 @@
 # Restaurant Management System
 
+![th](https://github.com/amalg20/java-project1-github-repo-sda/assets/145042005/e872eff3-0d45-4c16-86a4-b157de0ab2ab)
+
+
+
 ## Description of the project:
 
 This project provides a template to build a restaurant management web application using Spring Boot. It contains four main entity classes - Staff, MenuItem Room and Order. Staff represents employees working at the restaurant. MenuItem represents food/drink items on the menu. Room represents the reservation rooms . Order represents orders placed by customers.
@@ -65,5 +69,6 @@ C. /api/staff/ + staff.getId() : Delete Staff
 
 
 ## Resources:
+1. https://edynamiclearning.com/course/introduction-to-restaurant-management/
 
 ## Thank you! :)
