@@ -37,18 +37,27 @@ To setup the project I used:
 ## Controllers and Routes structure:
 
 **1.MenuItemController:**
+
 A. /api/menu-items/ : Get All MenuItems
+
 B. /api/menu-items/+ menuItem.getId() : Update MenuItem
+
 C. /api/menu-items/ + menuItem.getId() : Delete MenuItem
 
 **2.OrderController:**
+
 A. /api/orders/ : Get All Orders
+
 B. /api/orders/ + order.getId() : Update Order
+
 C. /api/orders/ + order.getId() : Delete Order
 
 **3.StaffController:** 
+
 A. /api/staff/ : Get All Staffs
+
 B. /api/staff/ + staff.getId() : Update Staff
+
 C. /api/staff/ + staff.getId() : Delete Staff
 
 ## Steps:
