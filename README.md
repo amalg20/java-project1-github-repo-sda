@@ -4,7 +4,7 @@
 
 
 
-## Description of the project:
+## 1. Description of the project:
 
 This project provides a template to build a restaurant management web application using Spring Boot. It contains four main entity classes - Staff, MenuItem Room and Order. Staff represents employees working at the restaurant. MenuItem represents food/drink items on the menu. Room represents the reservation rooms . Order represents orders placed by customers.
 
@@ -16,17 +16,17 @@ Each of the entities has a Spring Data JPA repository for database operations. T
 
 Unit and integration tests are provided for the repository and controller methods
 
-## Class Diagram:
+## 2. Class Diagram:
 
 ![RestaurantManagementSystem](https://github.com/amalg20/java-project1-github-repo-sda/assets/145042005/c8361a5f-a66c-40b3-90ba-6cc065f51cd4)
 
-## Setup:
+## 3. Setup:
 
 To setup the project I used:
 **i. Java 17**
 **ii. Maven**
 
-## Technologies Used:
+## 4. Technologies Used:
 
 1. Spring Boot 3.1.5
 2. Maven
@@ -34,7 +34,7 @@ To setup the project I used:
 4. Postman
 5. DBeaver
 
-## Controllers and Routes structure:
+## 5. Controllers and Routes structure:
 
 **1.MenuItemController:**
 
@@ -60,7 +60,7 @@ B. /api/staff/ + staff.getId() : Update Staff
 
 C. /api/staff/ + staff.getId() : Delete Staff
 
-## Steps:
+## 6. Steps:
 
 1) Created Spring Boot project with Maven and Java 
 2) Defined Staff, MenuItem Room and Order model classes under entity package
@@ -73,14 +73,14 @@ C. /api/staff/ + staff.getId() : Delete Staff
 9) Configured MySQL database with Spring Data JPA
 10) Used Git for version control and GitHub for remote repo
 
-## Extra links : 
+## 7. Extra links : 
 
 
-## Future Work:
+## 8. Future Work:
 1. I will increase the number of entity
 2. I will use Authentication implemented with Spring Security.
 
-## Resources:
+## 9. Resources:
 1. https://edynamiclearning.com/course/introduction-to-restaurant-management/
 
 ## Thank you! :)
